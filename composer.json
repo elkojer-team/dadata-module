@@ -1,0 +1,34 @@
+{
+    "name": "nwidart/dadata",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nicolas Widart",
+            "email": "n.widart@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Dadata\\": "",
+            "Modules\\Dadata\\App\\": "app/",
+            "Modules\\Dadata\\Database\\Factories\\": "database/factories/",
+            "Modules\\Dadata\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Modules\\Dadata\\Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "movemoveapp/laravel-dadata": "^1.0"
+    }
+}

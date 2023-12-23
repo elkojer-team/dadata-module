@@ -1,0 +1,11 @@
+{
+    "name": "Dadata",
+    "alias": "dadata",
+    "description": "Классификатор адресов",
+    "keywords": ["adress", "dadata"],
+    "priority": 0,
+    "providers": [
+        "Modules\\Dadata\\app\\Providers\\DadataServiceProvider"
+    ],
+    "files": []
+}
