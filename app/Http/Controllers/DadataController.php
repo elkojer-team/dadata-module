@@ -13,8 +13,7 @@ class DadataController extends Controller
      */
     public function index(PostRequest $request, DadataService $service)
     {
-        $response = $service->address($request->get('query'));
-        return $response;
+        return $service->address($request->get('query'));
     }
 
 

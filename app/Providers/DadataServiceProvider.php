@@ -97,7 +97,9 @@ class DadataServiceProvider extends ServiceProvider
      */
     public function provides(): array
     {
-        return [];
+        return [
+
+        ];
     }
 
     private function getPublishableViewPaths(): array

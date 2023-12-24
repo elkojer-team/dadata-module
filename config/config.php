@@ -2,9 +2,7 @@
 
 return [
     'name' => 'Dadata',
-    'services' => [
-        'TOKEN' => env('DADATA_TOKEN'),
-        'SECRET' => env('DADATA_SECRET'),
-        'TIMEOUT' => env('DADATA_TIMEOUT')
-    ]
+    'token' => env('DADATA_TOKEN'),
+    'secret' => env('DADATA_SECRET'),
+    'timeout' => env('DADATA_TIMEOUT')
 ];

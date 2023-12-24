@@ -7,5 +7,7 @@
     "providers": [
         "Modules\\Dadata\\app\\Providers\\DadataServiceProvider"
     ],
-    "files": []
+    "files": [
+        "vendor/autoload.php"
+    ]
 }
