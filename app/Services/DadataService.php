@@ -29,7 +29,7 @@ class DadataService
                 "value" => 'region'
             ],
                 to_bound: [
-                    'value' => 'street'
+                    'value' => 'house'
                 ]
             );
         });
