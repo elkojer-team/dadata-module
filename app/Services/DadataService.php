@@ -7,22 +7,31 @@
  */
 
 namespace Modules\Dadata\App\Services;
+
 use Illuminate\Support\Facades\Cache;
 use MoveMoveIo\DaData\DaDataAddress;
 use MoveMoveIo\DaData\Enums\Language;
+
 class DadataService
 {
-    private function serviceAddress() {
+    private function serviceAddress()
+    {
         return new DaDataAddress();
     }
 
     /**
      * @throws \Exception
      */
-    public function address (string $query, int $count = 10): array
+    public function address(string $query, int $count = 10): array
     {
         return Cache::rememberForever($query, function () use ($query, $count) {
-            return $this->serviceAddress()->prompt($query, $count, Language::RU);
+            return $this->serviceAddress()->prompt($query, $count, Language::RU, from_bound: [
+                "value" => 'region'
+            ],
+                to_bound: [
+                    'value' => 'street'
+                ]
+            );
         });
     }
 }
