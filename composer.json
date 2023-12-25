@@ -1,10 +1,12 @@
 {
-    "name": "nwidart/dadata",
+    "name": "adwos-team/dadata-modules",
     "description": "",
+    "version": "0.0.1@dev",
+    "minimum-stability": "dev",
     "authors": [
         {
-            "name": "Nicolas Widart",
-            "email": "n.widart@gmail.com"
+            "name": "Amon",
+            "email": "amon@adwos.org"
         }
     ],
     "extra": {
