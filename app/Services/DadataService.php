@@ -24,7 +24,7 @@ class DadataService
      */
     public function address(string $query, int $count = 10): array
     {
-        return Cache::rememberForever($query, function () use ($query, $count) {
+        return Cache::remember($query, 3600, function () use ($query, $count) {
             return $this->serviceAddress()->prompt($query, $count, Language::RU, from_bound: [
                 "value" => 'region'
             ],
