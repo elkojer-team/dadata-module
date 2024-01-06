@@ -1,6 +1,6 @@
 {
     "name": "adwos-team/dadata-module",
-    "description": "",
+    "description": "Модуль для подсказок адресов",
     "version": "0.0.1",
     "minimum-stability": "dev",
     "type": "laravel-module",
