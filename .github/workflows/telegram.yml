@@ -17,5 +17,7 @@ jobs:
             ⚡️ *Update Module* on [${{github.repository}}](https://github.com/${{ github.repository }})
             BY *${{ github.actor }}*
             *UPDATE:*
+            
             *${{ github.event.commits[0].message }}*
+            
             *Link:* [${{github.sha}}](https://github.com/${{ github.repository }}/commit/${{github.sha}})

@@ -13,7 +13,7 @@ class PostRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'query' => ['string', 'number']
+            'query' => 'string|nullable'
         ];
     }
 
