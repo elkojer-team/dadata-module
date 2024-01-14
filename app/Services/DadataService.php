@@ -22,7 +22,7 @@ class DadataService
     /**
      * @throws \Exception
      */
-    public function address(string $query = 'г ', int $count = 10): array
+    public function address($query = 'г ', int $count = 10): array
     {
         return Cache::remember($query, 3600, function () use ($query, $count) {
             return $this->serviceAddress()->prompt($query, $count, Language::RU, from_bound: [
