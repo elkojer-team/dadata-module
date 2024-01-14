@@ -1,0 +1,21 @@
+name: telegram message
+on: [push]
+jobs:
+
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: send telegram message on push
+        uses: appleboy/telegram-action@master
+        with:
+          debug: true
+          format: "markdown"
+          to: ${{ secrets.TELEGRAM_TO }}
+          token: ${{ secrets.TELEGRAM_TOKEN }}
+          message: |
+            ⚡️ *Update Module* on [${{github.repository}}](https://github.com/${{ github.repository }})
+            BY *${{ github.actor }}*
+            *UPDATE:*
+            *${{ github.event.commits[0].message }}*
+            *Link:* [${{github.sha}}](https://github.com/${{ github.repository }}/commit/${{github.sha}})
