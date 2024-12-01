@@ -1,0 +1,35 @@
+{
+    "name": "elkojer-team/dadata-module",
+    "description": "Модуль для подсказок адресов",
+    "type": "laravel-module",
+    "authors": [
+        {
+            "name": "Amon",
+            "email": "amon@adwos.org"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Dadata\\": "",
+            "Modules\\Dadata\\App\\": "app/",
+            "Modules\\Dadata\\Database\\Factories\\": "database/factories/",
+            "Modules\\Dadata\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Modules\\Dadata\\Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "hflabs/dadata": "^24.4"
+    }
+}
