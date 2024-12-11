@@ -3,19 +3,19 @@
 
 return [
     'token' => [
-        'value' => Settings::get('integrations.dadata.token', ''),
+        'value' => config('integrations.dadata.token', ''),
         'type' => 'text',
         'required' => true,
         'description' => 'Токен'
     ],
     'secret' => [
-        'value' => Settings::get('integrations.dadata.secret', ''),
+        'value' => config('integrations.dadata.secret', ''),
         'type' => 'text',
         'required' => true,
         'description' => 'Секретный ключ'
     ],
     'timeout' => [
-        'value' => Settings::get('integrations.dadata.timeout', "10"),
+        'value' => config('integrations.dadata.timeout', "10"),
         'type' => 'text',
         'required' => false,
         'description' => 'Таймаут'
