@@ -19,21 +19,19 @@ class DadataService
     public function address($query = 'г ', int $count = 10): array
     {
         return Cache::remember($query, 3600, function () use ($query, $count) {
-            return [
-                'suggestions' => $this->client->suggest('address', $query, $count,
-                    [
+            return $this->client->suggest('address', $query, $count,
+                [
                     'language' => 'ru',
-                        [
-                            "from_bound" => [
-                                "value" => "region"
-                            ],
-                            "to_bound" => [
-                                "value" => "house"
-                            ]
+                    [
+                        "from_bound" => [
+                            "value" => "region"
+                        ],
+                        "to_bound" => [
+                            "value" => "house"
                         ]
-                    ],
-                )
-            ];
+                    ]
+                ],
+            );
         });
     }
 }
