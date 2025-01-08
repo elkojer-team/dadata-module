@@ -3,6 +3,7 @@
     "alias": "dadata",
     "description": "Классификатор адресов (dadata.ru)",
     "keywords": [],
+    "type": "address",
     "priority": 0,
     "providers": [
         "Modules\\Dadata\\App\\Providers\\DadataServiceProvider"
